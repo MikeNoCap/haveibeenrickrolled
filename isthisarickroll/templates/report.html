@@ -1,0 +1,98 @@
+
+
+
+<html>
+    <head>
+      <title>Check links for rick-rolls!</title>
+      <style>
+        
+        body
+        {
+          font-family: sans-serif;
+          font-size: 1em;
+          line-height: 1.5em;
+          background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fw%2FBw6ZSG&psig=AOvVaw3G3dxBOq1UR-xc_Fat5hJE&ust=1625255973386000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCODUkr3UwvECFQAAAAAdAAAAABAP) 
+        }
+        h1
+        {
+          text-align: center;
+          color:darksalmon;
+          text-transform: uppercase;
+          font-family:monospace;
+          font-size: 4em;
+          line-height: 2;
+        }
+        h4
+        {
+          text-align: center;
+          color:black;
+          font-family:monospace;
+          font-size: 2.5em;
+          line-height: 1.7;
+        }
+        form
+        {
+          text-align: center;
+        }
+        input[type="text"] 
+        {
+          font-size: 45px;
+          width: 950px;
+        }
+        input[name="report"] 
+        {
+          text-align: center;
+          font-size: 34px;
+          height: 72px;
+          width: 330px;
+          color: black;
+          background-color: rgb(27, 117, 177);
+        }
+        input[name="handle"] 
+        {
+          
+          text-align: center;
+          font-size: 64px;
+          height: 170px;
+          width: 700px;
+          border: 70px yellow;
+        }
+        input[name="handle_check"] 
+        {
+          
+          text-align: center;
+          font-size: 64px;
+          height: 170px;
+          width: 800px;
+          border: 70px yellow;
+        }
+        input[name="back"] 
+        {
+          text-align: center;
+          font-size: 34px;
+          height: 72px;
+          width: 330px;
+          color: black;
+          background-color: rgb(27, 117, 177);
+        }
+    
+      </style>
+    </head>
+    <body style="background-color: brown;">
+      <h1>
+        Report rick-roll link
+      </h1>
+      <h4>
+        Just paste a link,<br />click the button <br /> to add rick-roll to blacklist.
+      </h4>
+      <form action="" method="POST" autocomplete="off">{% csrf_token %}
+        <input type="submit" name="back" value="Back to main-page">
+      </form>
+      <form method="POST" action="" autocomplete="off">{% csrf_token %}
+        <input type="text" name="handle" value="" placeholder="{{ message }}"><br \><br \>
+        <input type="submit" name="handle_check" value="Submit to rick-roll blacklist">
+      </form>
+      
+    </body>
+  </html>
+  
