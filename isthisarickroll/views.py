@@ -13,7 +13,7 @@ class EmptyInput(Exception):
     """Raised when a form is submitted without any content."""
     pass
 
-with open('rick_db.pkl', 'rb') as fp:
+with open('haveibeenrickrolled\\isthisarickroll\\rick_db.pkl', 'rb') as fp:
     ricklinks = pickle.load(fp)
     
 
