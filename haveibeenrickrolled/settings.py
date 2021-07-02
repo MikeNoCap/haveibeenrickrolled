@@ -55,7 +55,7 @@ ROOT_URLCONF = 'haveibeenrickrolled.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["isthisarickroll\\templates"],
+        'DIRS': ["isthisarickroll/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
