@@ -115,7 +115,7 @@ def checkrickroll(link: str):
     #print(final_destination)
     for i in ricklinks:
         #print(f"{final_destination} vs {i}")
-        if final_destination in i:
+        if final_destination in i and len(final_destination) == len(i):
             return True
     
     return False
