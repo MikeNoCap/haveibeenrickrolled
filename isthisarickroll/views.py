@@ -5,9 +5,6 @@ import requests as req
 import pickle
 import random
 # Create your views here.
-import os
-
-print(os.path)
 
 
 
